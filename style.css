@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-image: url("../image/1.jpg");
   font-family: Quicksand, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@ footer {
   background-color: #d4d4d4;
   color: #fff;
   font-weight: 700;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -105,41 +108,14 @@ main {
   gap: 1rem 2rem;
 }
 
-aside {
-  flex: 1;
-}
-
 @media screen and (max-width: 1200px) {
   main {
     flex-flow: column nowrap;
-  }
-
-  main aside {
-    align-self: center;
-  }
-  table {
-    display: flex;
-    justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
   nav ul {
-    justify-content: center;
-  }
-
-  main aside {
-    align-self: stretch;
-  }
-
-  main aside .featured-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  table {
-    display: flex;
     justify-content: center;
   }
 }
